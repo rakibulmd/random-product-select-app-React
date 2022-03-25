@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
     addToLocalStorage,
+    deleteFromLocalStorage,
     getLocalStorageCart,
 } from "../../Utilities/processLocalStorage";
 import Cart from "../Cart/Cart";
@@ -36,7 +37,6 @@ const Shop = () => {
                 newCart.push(foundProduct);
             }
         }
-        console.log(newCart);
         setCart(newCart);
     }, [products]);
     const handleDeleteFromCart = (toDeleteProduct) => {
@@ -45,6 +45,12 @@ const Shop = () => {
         let newCart = cart.filter((product) => product !== toDeleteProduct);
         console.log(newCart);
         setCart(newCart);
+        deleteFromLocalStorage(toDeleteProduct.id);
+    };
+    const chooseRandomOne = () => {
+        let newCart = [...cart];
+        let item = newCart[Math.floor(Math.random() * newCart.length)];
+        console.log(item);
     };
     return (
         <main className="shop container mx-auto row mt-5">
@@ -64,6 +70,7 @@ const Shop = () => {
                     <Cart
                         cart={cart}
                         handleDeleteFromCart={handleDeleteFromCart}
+                        chooseRandomOne={chooseRandomOne}
                     ></Cart>
                 </div>
             </div>

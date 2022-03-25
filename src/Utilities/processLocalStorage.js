@@ -7,9 +7,22 @@ const getLocalStorageCart = () => {
 
 const addToLocalStorage = (id) => {
     const cart = getLocalStorageCart();
-    const quantity = cart[id];
-    quantity ? console.log("already exist in local storage") : (cart[id] = 1);
+    let existentId = Object.keys(cart);
+    if (existentId.length < 4) {
+        const quantity = cart[id];
+        quantity
+            ? console.log("already exist in local storage")
+            : (cart[id] = 1);
+    } else {
+        console.log("maximum item in local storage");
+    }
     localStorage.setItem("user-cart", JSON.stringify(cart));
 };
 
-export { getLocalStorageCart, addToLocalStorage };
+const deleteFromLocalStorage = (id) => {
+    const cart = getLocalStorageCart();
+    delete cart[id];
+    localStorage.setItem("user-cart", JSON.stringify(cart));
+};
+
+export { getLocalStorageCart, addToLocalStorage, deleteFromLocalStorage };

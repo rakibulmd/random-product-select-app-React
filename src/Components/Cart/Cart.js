@@ -8,7 +8,7 @@ import React from "react";
 import CartItems from "../CartItems/CartItems";
 import "./Cart.css";
 
-const Cart = ({ cart, handleDeleteFromCart }) => {
+const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne }) => {
     return (
         <div>
             <h4>
@@ -25,8 +25,12 @@ const Cart = ({ cart, handleDeleteFromCart }) => {
                 ))}
             </div>
             <div className="d-grid gap-2 mb-3">
-                <button className="btn btn-success" type="button">
-                    Choose One For Me{" "}
+                <button
+                    onClick={chooseRandomOne}
+                    className="btn btn-success"
+                    type="button"
+                >
+                    Choose A Random One{" "}
                     <FontAwesomeIcon icon={faShuffle}></FontAwesomeIcon>
                 </button>
             </div>
