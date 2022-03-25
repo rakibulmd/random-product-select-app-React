@@ -8,12 +8,20 @@ const Shop = () => {
             .then((res) => res.json())
             .then((data) => setProducts(data));
     }, []);
+
+    const handleAddToCart = (product) => {
+        console.log(product);
+    };
     return (
         <main className="shop container mx-auto row mt-5">
             <div className="col-sm-12 col-md-9">
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     {products.map((product) => (
-                        <Products key={product.id} product={product}></Products>
+                        <Products
+                            key={product.id}
+                            product={product}
+                            handleAddToCart={handleAddToCart}
+                        ></Products>
                     ))}
                 </div>
             </div>
