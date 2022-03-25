@@ -49,8 +49,12 @@ const Shop = () => {
     };
     const chooseRandomOne = () => {
         let newCart = [...cart];
-        let item = newCart[Math.floor(Math.random() * newCart.length)];
-        console.log(item);
+        if (newCart.length === 4) {
+            let item = newCart[Math.floor(Math.random() * newCart.length)];
+            console.log(item);
+        } else {
+            console.log("select 4 items to shuffle");
+        }
     };
     return (
         <main className="shop container mx-auto row mt-5">
