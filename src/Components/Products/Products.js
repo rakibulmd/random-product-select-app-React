@@ -7,7 +7,7 @@ const Products = ({ product, handleAddToCart }) => {
     const { picture, name, price } = product;
     return (
         <div className="col">
-            <div className="card h-100 text-center border-none shadow-lg">
+            <div className="card product-container h-100 text-center border-none shadow-lg">
                 <div className="p-3">
                     <img
                         className="product-img mx-auto"

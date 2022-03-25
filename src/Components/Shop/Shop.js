@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { addToLocalStorage } from "../../Utilities/processLocalStorage";
 import Products from "../Products/Products";
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
     useEffect(() => {
         fetch("products.json")
             .then((res) => res.json())
@@ -10,7 +12,14 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (product) => {
-        console.log(product);
+        addToLocalStorage(product.id);
+        if (cart.indexOf(product) === -1) {
+            cart.length <= 3
+                ? setCart([...cart, product])
+                : console.log("cart already have maximum items");
+        } else {
+            console.log("product already in cart");
+        }
     };
     return (
         <main className="shop container mx-auto row mt-5">
