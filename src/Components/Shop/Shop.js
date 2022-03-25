@@ -31,15 +31,19 @@ const Shop = () => {
         let localCart = getLocalStorageCart();
         let newCart = [];
         for (const id in localCart) {
-            let product = products.find((product) => product.id === id);
-            newCart.push(product);
+            let foundProduct = products.find((product) => product.id === id);
+            if (foundProduct) {
+                newCart.push(foundProduct);
+            }
         }
         console.log(newCart);
         setCart(newCart);
     }, [products]);
-    const handleDeleteFromCart = (product) => {
-        let newCart = [...cart];
-        delete newCart[newCart.indexOf(product)];
+    const handleDeleteFromCart = (toDeleteProduct) => {
+        console.log(cart);
+        console.log(toDeleteProduct);
+        let newCart = cart.filter((product) => product !== toDeleteProduct);
+        console.log(newCart);
         setCart(newCart);
     };
     return (

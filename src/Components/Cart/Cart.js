@@ -13,12 +13,12 @@ const Cart = ({ cart, handleDeleteFromCart }) => {
         <div>
             <h4>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-                Selected items:{" "}
+                Selected items: {cart.length}
             </h4>
             <div className="cart-items mt-4">
                 {cart.map((product) => (
                     <CartItems
-                        key={product.index}
+                        key={product.id}
                         product={product}
                         handleDeleteFromCart={handleDeleteFromCart}
                     ></CartItems>
