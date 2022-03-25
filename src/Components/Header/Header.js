@@ -3,7 +3,7 @@ import "./Header.css";
 
 const Header = () => {
     return (
-        <header className="header container text-center mt-sm-2 mt-md-4">
+        <header className="header container text-center mt-sm-2 mt-md-4 mb-5">
             <h1 className="logo fw-bold">
                 The <span className="text-primary">Unpredictable</span> Shop
             </h1>
