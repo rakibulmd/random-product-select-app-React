@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { addToLocalStorage } from "../../Utilities/processLocalStorage";
+import Cart from "../Cart/Cart";
 import Products from "../Products/Products";
 
 const Shop = () => {
@@ -35,7 +36,7 @@ const Shop = () => {
                 </div>
             </div>
             <div className="col-sm-12 col-md-3">
-                <p>this is cart</p>
+                <Cart cart={cart}></Cart>
             </div>
         </main>
     );
