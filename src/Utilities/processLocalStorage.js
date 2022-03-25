@@ -25,4 +25,13 @@ const deleteFromLocalStorage = (id) => {
     localStorage.setItem("user-cart", JSON.stringify(cart));
 };
 
-export { getLocalStorageCart, addToLocalStorage, deleteFromLocalStorage };
+const deleteCartItemFromLocalStorage = () => {
+    localStorage.removeItem("user-cart");
+};
+
+export {
+    getLocalStorageCart,
+    addToLocalStorage,
+    deleteFromLocalStorage,
+    deleteCartItemFromLocalStorage,
+};

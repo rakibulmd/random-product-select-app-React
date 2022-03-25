@@ -71,6 +71,7 @@ const Shop = () => {
                         cart={cart}
                         handleDeleteFromCart={handleDeleteFromCart}
                         chooseRandomOne={chooseRandomOne}
+                        setCart={setCart}
                     ></Cart>
                 </div>
             </div>

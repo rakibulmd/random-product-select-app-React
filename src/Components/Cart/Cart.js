@@ -5,10 +5,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { deleteCartItemFromLocalStorage } from "../../Utilities/processLocalStorage";
 import CartItems from "../CartItems/CartItems";
 import "./Cart.css";
 
-const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne }) => {
+const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne, setCart }) => {
     return (
         <div>
             <h4>
@@ -34,7 +35,13 @@ const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne }) => {
                     <FontAwesomeIcon icon={faShuffle}></FontAwesomeIcon>
                 </button>
             </div>
-            <div className="d-grid gap-2">
+            <div
+                onClick={() => {
+                    setCart([]);
+                    deleteCartItemFromLocalStorage();
+                }}
+                className="d-grid gap-2"
+            >
                 <button className="btn btn-danger" type="button">
                     Choose Again{" "}
                     <FontAwesomeIcon icon={faArrowsRotate}></FontAwesomeIcon>
