@@ -69,7 +69,7 @@ const Shop = () => {
     };
     return (
         <main className="shop container mx-auto row mt-5">
-            <div className="col-sm-12 col-md-9 products-container mb-sm-5">
+            <div className="col-sm-12 col-lg-9 products-container mb-sm-5">
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     {products.map((product) => (
                         <Products
@@ -80,7 +80,7 @@ const Shop = () => {
                     ))}
                 </div>
             </div>
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-lg-3">
                 <div className="cart-container">
                     <Cart
                         cart={cart}
