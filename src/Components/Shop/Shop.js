@@ -55,14 +55,14 @@ const Shop = () => {
     const chooseRandomOne = () => {
         let newCart = [...cart];
 
-        if (newCart.length === 4) {
+        if (newCart.length >= 1) {
             let item = newCart[Math.floor(Math.random() * newCart.length)];
             item.isRandom = true;
             setCart([]);
             deleteCartItemFromLocalStorage();
             setCart([item]);
         } else {
-            Alert("Select 4 items first");
+            Alert("Select  items first");
         }
     };
     return (

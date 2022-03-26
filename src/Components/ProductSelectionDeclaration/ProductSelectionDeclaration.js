@@ -5,7 +5,7 @@ const ProductSelectionDeclaration = () => {
     return (
         <div className="container product-selection">
             <h2 className="text-center">
-                Select exactly <span className="fw-bold">"Four"</span> products
+                Select upto <span className="fw-bold">"Four"</span> products
             </h2>
         </div>
     );
