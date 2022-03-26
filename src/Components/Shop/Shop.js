@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
     addToLocalStorage,
+    deleteCartItemFromLocalStorage,
     deleteFromLocalStorage,
     getLocalStorageCart,
 } from "../../Utilities/processLocalStorage";
@@ -18,14 +19,19 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (product) => {
-        delete product.isRandom;
-        addToLocalStorage(product.id);
-        if (cart.indexOf(product) === -1) {
-            cart.length <= 3
-                ? setCart([...cart, product])
-                : console.log("cart already have maximum items");
+        let randomProduct = cart.find((product) => product.isRandom === true);
+        if (randomProduct) {
+            console.log("clear the cart first");
         } else {
-            console.log("product already in cart");
+            delete product.isRandom;
+            addToLocalStorage(product.id);
+            if (cart.indexOf(product) === -1) {
+                cart.length <= 3
+                    ? setCart([...cart, product])
+                    : console.log("cart already have maximum items");
+            } else {
+                console.log("product already in cart");
+            }
         }
     };
 
@@ -54,6 +60,8 @@ const Shop = () => {
         if (newCart.length === 4) {
             let item = newCart[Math.floor(Math.random() * newCart.length)];
             item.isRandom = true;
+            setCart([]);
+            deleteCartItemFromLocalStorage();
             setCart([item]);
         } else {
             console.log("select 4 items to shuffle");
