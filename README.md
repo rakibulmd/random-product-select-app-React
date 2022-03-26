@@ -4,7 +4,43 @@
 
 https://assign8-rakibulmd.netlify.app/
 
-# Getting Started with Create React App
+# The Unpredictable Shop
+
+Add items to cart and this you give you a random product from your cart!
+
+## Description
+
+This project is all about adding items to carts and get a random item from your added products. This is truly random and super fast to decide what you gonna buy next. Fully mobile responsive and eye smoothing animation will give you a pleasant experience. Al the last section there is some QnA about react.js.
+
+## Getting Started
+
+### Dependencies
+
+-   fortawesome/fontawesome-svg-core": "^6.1.1
+-   @fortawesome/free-solid-svg-icons": "^6.1.1
+-   @fortawesome/react-fontawesome": "^0.1.18
+-   @testing-library/jest-dom": "^5.16.3
+-   @testing-library/react": "^12.1.4
+-   @testing-library/user-event": "^13.5.0
+-   animate.css": "^4.1.1
+-   bootstrap": "^5.1.3
+-   react": "^17.0.2
+-   react-bootstrap": "^2.2.1
+-   react-dom": "^17.0.2
+-   react-scripts": "5.0.0
+-   react-toastify": "^8.2.0
+-   web-vitals": "^2.1.4
+
+## Authors
+
+Rakibul Islam @rakibulmd
+
+## Version History
+
+-   0.1
+    -   Initial Release
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
