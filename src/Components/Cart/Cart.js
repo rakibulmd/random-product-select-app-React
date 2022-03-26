@@ -1,5 +1,4 @@
 import {
-    faAnglesDown,
     faArrowsRotate,
     faShoppingCart,
     faShuffle,
