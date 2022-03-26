@@ -2,50 +2,62 @@
     {
         "id": "623ddf5950f9bcb4f05882ea",
         "productIndex": 0,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 1798,
-        "name": "Liz Massey",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+        "price": 1199,
+        "name": "Samsung Galaxy S22 Ultra 5G",
+        "quantity": 0,
+        "slogan": "Samsung is best for you!",
+        "description": "The best ever phone of Samsung with best camera ever!"
     },
     {
         "id": "623ddf5903c1e8cb37be6d4f",
         "productIndex": 1,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 1186,
-        "name": "Milagros Hopper",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg",
+        "price": 1099,
+        "name": "Apple iPhone 13 Pro Max",
+        "quantity": 0,
+        "slogan": "Only iPhone suits with you!",
+        "description": "World's most powerful phone with the power of Apple A15 Bionic"
     },
     {
         "id": "623ddf599786e54ad99185cd",
         "productIndex": 2,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 3387,
-        "name": "Park Valentine",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-plus-5g.jpg",
+        "price": 999,
+        "name": "Samsung Galaxy S22+ 5G",
+        "quantity": 0,
+        "slogan": "The phone that suits everyone!",
+        "description": "Gorgeous display & outstanding camera for the very best of you."
     },
     {
         "id": "623ddf5974fca157fc5db94f",
         "productIndex": 3,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 1994,
-        "name": "Buckley Sharp",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/honor-magic4-ultimate.jpg",
+        "price": 1199,
+        "name": "Honor Magic4 Ultimate",
+        "quantity": 0,
+        "slogan": "The Camera King for you",
+        "description": "World most powerful mobile camera in a smartphone"
     },
     {
         "id": "623ddf59b230e35a8e407e8d",
         "productIndex": 4,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 1374,
-        "name": "Bryant Calderon",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg",
+        "price": 1199,
+        "name": "Oppo Find X5 Pro",
+        "quantity": 0,
+        "slogan": "The all rounder Oppo X5 Pro for you!",
+        "description": "Camera, battery, performance. Perfectly Balanced."
     },
     {
         "id": "623ddf5900eb8eb876db76e0",
         "productIndex": 5,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 1498,
-        "name": "Gaines Puckett",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-1.jpg",
+        "price": 1249,
+        "name": "Sony Xperia 1",
+        "quantity": 0,
+        "slogan": "Classcial sony for classical you!",
+        "description": "Industry grade camera in a Phone!"
     },
     {
         "id": "623ddf59a52da73822646c56",
@@ -53,46 +65,58 @@
         "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
         "price": 1117,
         "name": "Hawkins Brock",
-        "quantity": 0
+        "quantity": 0,
+        "slogan": "Classcial sony for classical you!",
+        "description": "World's first 144Hz display mobile"
     },
     {
         "id": "623ddf593fdd14fa7ae73ca1",
         "productIndex": 7,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5-ultimate.jpg",
         "price": 3421,
         "name": "Leigh Boyd",
-        "quantity": 0
+        "quantity": 0,
+        "slogan": "ROG! Made for you , made for gamers!",
+        "description": "World's first vapor chamber cooling gaming phone!"
     },
     {
         "id": "623ddf5931845493a78cde74",
         "productIndex": 8,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 2778,
-        "name": "Clay Barber",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-fold-5g.jpg",
+        "price": 2200,
+        "name": "Samsung Galaxy Fold 5G",
+        "quantity": 0,
+        "slogan": "Galaxy Fold! Perfect match!",
+        "description": "World's most powerful foldable smartphone"
     },
     {
         "id": "623ddf59ff7b6bc7b0579842",
         "productIndex": 9,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate30-pro-5g.jpg",
         "price": 1694,
-        "name": "Patel Molina",
-        "quantity": 0
+        "name": "Huawei Mate 30 Pro 5G",
+        "quantity": 0,
+        "slogan": "The Camera King for you",
+        "description": "World most powerful mobile camera in a smartphone"
     },
     {
         "id": "623ddf593b41d6f67c4a8d8b",
         "productIndex": 10,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 2784,
-        "name": "Essie Stone",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-xs-.jpg",
+        "price": 1149,
+        "name": "Huawei Mate Xs",
+        "quantity": 0,
+        "slogan": "Damm! That's perfect matching!",
+        "description": "World's first foldable tablet smartphone"
     },
     {
         "id": "623ddf59e14f0e5fef2861f5",
         "productIndex": 11,
-        "picture": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-5s-pro.jpg",
-        "price": 3553,
-        "name": "Billie Holland",
-        "quantity": 0
+        "picture": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-black-shark-3-pro.jpg",
+        "price": 1049,
+        "name": "Xiaomi Black Shark 3 Pro",
+        "quantity": 0,
+        "slogan": "Are you a gamer?",
+        "description": "Top notch performance out of the box"
     }
 ]

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Alert } from "../../Utilities/Alert";
 import {
     addToLocalStorage,
     deleteCartItemFromLocalStorage,
@@ -21,16 +22,16 @@ const Shop = () => {
     const handleAddToCart = (product) => {
         let randomProduct = cart.find((product) => product.isRandom === true);
         if (randomProduct) {
-            console.log("clear the cart first");
+            Alert("Clear cart by clicking choose again");
         } else {
             delete product.isRandom;
             addToLocalStorage(product.id);
             if (cart.indexOf(product) === -1) {
                 cart.length <= 3
                     ? setCart([...cart, product])
-                    : console.log("cart already have maximum items");
+                    : Alert("You already have 4 items in cart");
             } else {
-                console.log("product already in cart");
+                Alert("This item is already in cart");
             }
         }
     };
@@ -47,10 +48,7 @@ const Shop = () => {
         setCart(newCart);
     }, [products]);
     const handleDeleteFromCart = (toDeleteProduct) => {
-        console.log(cart);
-        console.log(toDeleteProduct);
         let newCart = cart.filter((product) => product !== toDeleteProduct);
-        console.log(newCart);
         setCart(newCart);
         deleteFromLocalStorage(toDeleteProduct.id);
     };
@@ -64,7 +62,7 @@ const Shop = () => {
             deleteCartItemFromLocalStorage();
             setCart([item]);
         } else {
-            console.log("select 4 items to shuffle");
+            Alert("Select 4 items first");
         }
     };
     return (

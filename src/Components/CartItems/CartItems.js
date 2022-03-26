@@ -7,8 +7,8 @@ import "animate.css";
 const CartItems = ({ product, handleDeleteFromCart }) => {
     const { picture, name } = product;
     return (
-        <div className=" row d-flex align-items-center mb-3 animate__animated animate__bounceIn">
-            <img className="w-25 col-3" src={picture} alt="" />
+        <div className=" row d-flex align-items-center mb-3 animate__animated animate__slideInDown">
+            <img className="cart-items-img w-25 col-3" src={picture} alt="" />
             <p className="col-6">{name}</p>
             <button
                 onClick={() => {

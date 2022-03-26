@@ -10,16 +10,22 @@ import { deleteCartItemFromLocalStorage } from "../../Utilities/processLocalStor
 import CartItems from "../CartItems/CartItems";
 import RandomItem from "../RandomItem/RandomItem";
 import "./Cart.css";
+import "animate.css";
 
 const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne, setCart }) => {
     let randomProduct = cart.find((product) => product.isRandom === true);
     console.log(randomProduct);
     return (
-        <div className="cart" id="cart">
+        <div className="cart animate__animated animate__fadeInRight" id="cart">
             {!randomProduct ? (
                 <h4>
-                    <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-                    Selected items: {cart.length} / 4
+                    Selected items: <br />
+                    <span className="me-3">
+                        <FontAwesomeIcon
+                            icon={faShoppingCart}
+                        ></FontAwesomeIcon>
+                    </span>
+                    {cart.length} / 4
                 </h4>
             ) : (
                 <h4>
