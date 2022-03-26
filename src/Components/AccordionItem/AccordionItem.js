@@ -7,9 +7,11 @@ const AccordionItem = ({ toggleKey, answer, question }) => {
     return (
         <Accordion.Item eventKey={toggleKey}>
             <Accordion.Header>
-                <span className="fw-bold">{question}</span>
+                <span className="fw-bold fs-5">{question}</span>
             </Accordion.Header>
-            <Accordion.Body>{answer}</Accordion.Body>
+            <Accordion.Body>
+                <span className="fs-5">{answer}</span>
+            </Accordion.Body>
         </Accordion.Item>
     );
 };

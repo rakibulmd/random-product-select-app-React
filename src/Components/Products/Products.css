@@ -7,6 +7,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 10px;
+    border: 1px solid rgba(0, 128, 128, 0.472);
 }
 
 .product-description {

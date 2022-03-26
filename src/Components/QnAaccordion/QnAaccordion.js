@@ -9,8 +9,9 @@ const QnAaccordion = () => {
     let questionTwo = "What is the differences between props & state?";
     let answerTwo =
         "Props is the short name of properties which are used to pass data from component to component. Props are read only means it's value can not be changed. While state is something that likely to be changed. State stores data and the data can be changed at any time. Changing this data using useState is an asynchronous task. Also, where props can be accessed by child component, state value can not be accessed by it child components.  ";
-    let answerThree = "This is answer Three";
-    let questionThree = "This is question Three";
+    let questionThree = "How does useState work?";
+    let answerThree =
+        "useState is used to store variable and update them . It is a hook that allow us to store variable and it returns a function to update it and a variable with the value we want to store. By calling the function, we can update the value. The update function re-assign the current value and let react to re-render to update the value. ";
     return (
         <div className="container my-5">
             <h2>QnA:</h2>
