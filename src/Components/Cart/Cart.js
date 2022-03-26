@@ -1,6 +1,5 @@
 import {
     faAnglesDown,
-    faArrowDown,
     faArrowsRotate,
     faShoppingCart,
     faShuffle,
@@ -20,7 +19,7 @@ const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne, setCart }) => {
             {!randomProduct ? (
                 <h4>
                     <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-                    Selected items: {cart.length}
+                    Selected items: {cart.length} / 4
                 </h4>
             ) : (
                 <h4>
