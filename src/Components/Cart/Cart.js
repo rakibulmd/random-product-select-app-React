@@ -17,7 +17,7 @@ const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne, setCart }) => {
     return (
         <div className="cart animate__animated animate__fadeInRight" id="cart">
             {!randomProduct ? (
-                <h4>
+                <h5>
                     Selected items: <br />
                     <span className="me-3">
                         <FontAwesomeIcon
@@ -25,12 +25,9 @@ const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne, setCart }) => {
                         ></FontAwesomeIcon>
                     </span>
                     {cart.length} / 4
-                </h4>
+                </h5>
             ) : (
-                <h4>
-                    Congrats! You got{" "}
-                    <FontAwesomeIcon icon={faAnglesDown}></FontAwesomeIcon>
-                </h4>
+                <h5 className="text-center">Congrats! You got :</h5>
             )}
             {!randomProduct ? (
                 <div className="cart-items mt-4">
@@ -54,7 +51,7 @@ const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne, setCart }) => {
                 </div>
             )}
             {!randomProduct ? (
-                <div className="d-grid gap-2 mb-3">
+                <div className="d-grid gap-2 mb-2">
                     <button
                         onClick={chooseRandomOne}
                         className="btn btn-success"

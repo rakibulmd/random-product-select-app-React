@@ -1,3 +1,7 @@
 .random-item-slogan {
-    font-weight: 500;
+    font-weight: 400;
+}
+
+.random-item-img {
+    max-width: 200px;
 }

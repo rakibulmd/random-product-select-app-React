@@ -9,22 +9,22 @@ const Products = ({ product, handleAddToCart }) => {
     return (
         <div className="col animate__animated animate__fadeInUp">
             <div className="card product-container h-100 text-center border-none shadow-lg">
-                <div className="p-3">
+                <div className="p-2">
                     <img
-                        className="product-img mx-auto w-75"
+                        className="product-img mx-auto w-50"
                         src={picture}
                         alt={name}
                     />
-                    <h5 className="mt-3">{name}</h5>
-                    <h3 className="text-primary my-3">${price}</h3>
-                    <p className="product-description"> {description}</p>
+                    <h6 className="mt-3">{name}</h6>
+                    <h4 className="text-primary my-3">${price}</h4>
+                    <p className="product-description lh-sm"> {description}</p>
                 </div>
                 <div className="d-grid gap-2 product-btn">
                     <button
                         onClick={() => {
                             handleAddToCart(product);
                         }}
-                        className="btn btn-success fs-5 p-2"
+                        className="btn btn-success fs-6 p-2"
                         type="button"
                     >
                         Add to Cart{" "}

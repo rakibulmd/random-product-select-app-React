@@ -4,6 +4,13 @@
     background: transparent;
 }
 
+.cart-item-name {
+    font-size: 14px;
+}
+
+.cart-items-img {
+    width: 55px;
+}
 /* .cart-items-img {
     width: 50px;
 } */

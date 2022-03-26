@@ -8,10 +8,7 @@ const Header = () => {
     return (
         <Navbar className="header" fixed="top">
             <Container>
-                <Navbar.Brand
-                    href="#home"
-                    className="fs-md-3 fw-bold text-white"
-                >
+                <Navbar.Brand href="#home" className="fs-md-3 text-white">
                     The Unpredictable Shop
                 </Navbar.Brand>
                 <Navbar.Toggle />
