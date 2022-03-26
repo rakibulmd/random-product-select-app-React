@@ -29,7 +29,7 @@ const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne, setCart }) => {
                 </h4>
             ) : (
                 <h4>
-                    Woo!! You got{" "}
+                    Congrats! You got{" "}
                     <FontAwesomeIcon icon={faAnglesDown}></FontAwesomeIcon>
                 </h4>
             )}

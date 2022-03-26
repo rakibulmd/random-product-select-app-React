@@ -4,7 +4,9 @@ import "./ProductSelectionDeclaration.css";
 const ProductSelectionDeclaration = () => {
     return (
         <div className="container product-selection">
-            <h2 className="text-center">Select exactly four products</h2>
+            <h2 className="text-center">
+                Select exactly <span className="fw-bold">"Four"</span> products
+            </h2>
         </div>
     );
 };
