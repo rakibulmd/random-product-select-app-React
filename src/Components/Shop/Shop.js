@@ -18,6 +18,7 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (product) => {
+        delete product.isRandom;
         addToLocalStorage(product.id);
         if (cart.indexOf(product) === -1) {
             cart.length <= 3
@@ -49,9 +50,11 @@ const Shop = () => {
     };
     const chooseRandomOne = () => {
         let newCart = [...cart];
+
         if (newCart.length === 4) {
             let item = newCart[Math.floor(Math.random() * newCart.length)];
-            console.log(item);
+            item.isRandom = true;
+            setCart([item]);
         } else {
             console.log("select 4 items to shuffle");
         }
