@@ -1,4 +1,15 @@
 .cart-container {
     position: sticky;
-    top: 20px;
+    top: 100px;
+}
+
+.products-container {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .cart-container {
+        position: inherit;
+        margin-top: 50px;
+    }
 }
