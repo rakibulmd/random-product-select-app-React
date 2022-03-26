@@ -1,5 +1,7 @@
 .cart {
-    background: #ffc107;
+    background: -webkit-linear-gradient(to right, #061161, #007061);
+    background: linear-gradient(to top, #061161, #007061);
+    color: #fff;
     padding: 30px 20px;
     border-radius: 8px;
 }

@@ -24,7 +24,7 @@ const Products = ({ product, handleAddToCart }) => {
                         onClick={() => {
                             handleAddToCart(product);
                         }}
-                        className="btn btn-warning"
+                        className="btn btn-success"
                         type="button"
                     >
                         Add to Cart{" "}
