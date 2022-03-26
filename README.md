@@ -1,6 +1,8 @@
-[Website Live link]([Website Live link](https://github.com/facebook/create-react-app).
+# Project is Live!
 
-https://github.com/facebook/create-react-app
+[Website Live link]([Website Live link](https://assign8-rakibulmd.netlify.app/)).
+
+https://assign8-rakibulmd.netlify.app/
 
 # Getting Started with Create React App
 
