@@ -1,9 +1,9 @@
 # Project is Live!
 
-## ([Website Live link](https://assign8-rakibulmd.netlify.app/))
+## ([Website Live link](https://unpredictable-shop-rakibulmd.netlify.app/))
 
 [Website Live link]
-https://assign8-rakibulmd.netlify.app/
+https://unpredictable-shop-rakibulmd.netlify.app/
 
 # The Unpredictable Shop
 
