@@ -1,7 +1,8 @@
 # Project is Live!
 
-[Website Live link]([Website Live link](https://assign8-rakibulmd.netlify.app/)).
+## ([Website Live link](https://assign8-rakibulmd.netlify.app/))
 
+[Website Live link]
 https://assign8-rakibulmd.netlify.app/
 
 # The Unpredictable Shop
@@ -10,7 +11,7 @@ Add items to cart and this you give you a random product from your cart!
 
 ## Description
 
-This project is all about adding items to carts and get a random item from your added products. This is truly random and super fast to decide what you gonna buy next. Fully mobile responsive and eye smoothing animation will give you a pleasant experience. Al the last section there is some QnA about react.js.
+This project is all about adding items to carts and get a random item from your added products. This is truly random and super fast to decide what you gonna buy next. Fully mobile responsive and eye smoothing animation will give you a pleasant experience. At the last section there is some QnA about react.js.
 
 ## Getting Started
 

@@ -14,7 +14,7 @@ const addToLocalStorage = (id) => {
             ? console.log("already exist in local storage")
             : (cart[id] = 1);
     } else {
-        console.log("maximum item in local storage");
+        console.log("max 4 items in cart / local storage");
     }
     localStorage.setItem("user-cart", JSON.stringify(cart));
 };

@@ -3,7 +3,6 @@ import { Accordion } from "react-bootstrap";
 import "./AccordionItem.css";
 
 const AccordionItem = ({ toggleKey, answer, question }) => {
-    console.log(toggleKey);
     return (
         <Accordion.Item eventKey={toggleKey}>
             <Accordion.Header>

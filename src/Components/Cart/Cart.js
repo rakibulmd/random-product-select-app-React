@@ -14,7 +14,6 @@ import "animate.css";
 
 const Cart = ({ cart, handleDeleteFromCart, chooseRandomOne, setCart }) => {
     let randomProduct = cart.find((product) => product.isRandom === true);
-    console.log(randomProduct);
     return (
         <div className="cart animate__animated animate__fadeInRight" id="cart">
             {!randomProduct ? (
