@@ -3,10 +3,6 @@
     top: 100px;
 }
 
-.products-container {
-    margin-top: 50px;
-}
-
 @media screen and (max-width: 576px) {
     .cart-container {
         position: inherit;
